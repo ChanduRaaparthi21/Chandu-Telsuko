@@ -1,4 +1,4 @@
-package com.chandu.app;
+package com.chandu.app.Model;
 
 import org.springframework.stereotype.Component;
 
