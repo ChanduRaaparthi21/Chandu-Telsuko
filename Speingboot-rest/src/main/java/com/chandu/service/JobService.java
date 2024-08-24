@@ -26,4 +26,18 @@ public class JobService {
 		// TODO Auto-generated method stub
 		return jobRepository.getJob(postId);
 	}
+
+	public void updateJob(Job job) {
+		// TODO Auto-generated method stub
+		jobRepository.updateJob(job);
+		
+	}
+
+	public void deleteJob(int postId) {
+		// TODO Auto-generated method stub
+		jobRepository.deleteById(postId);
+		
+	}
 }
+
+	

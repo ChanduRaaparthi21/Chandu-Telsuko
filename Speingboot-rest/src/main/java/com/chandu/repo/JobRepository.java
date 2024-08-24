@@ -43,4 +43,18 @@ public class JobRepository {
 		}
 		return null;
 	}
+
+	public void updateJob(Job job) {
+		// TODO Auto-generated method stub
+		for(Job job1 : jobs) {
+			if(job1.getPostId()== job.getPostId()) {
+				job1.setPostProfile(job.getPostProfile());
+				job1.setPostDesc(job.getPostDesc());
+				job1.setReqExperience(job.getReqExperience());
+				job1.setPostTechStack(job.getPostTechStack());
+			}
+			
+		}
+		
+	}
 }
