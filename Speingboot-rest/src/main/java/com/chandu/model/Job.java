@@ -3,7 +3,14 @@ package com.chandu.model;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+@Component
+@Entity
 public class Job {
+	@Id
     private int postId;
     private String postProfile;
     private String postDesc;
