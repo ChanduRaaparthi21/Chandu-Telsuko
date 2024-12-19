@@ -96,5 +96,13 @@ public class HomeController {
 		return "pyhton";
 	}
 	
+	@GetMapping("/Hi") 
+	public String hi() 
+	{
+		System.out.println("alien method is called");
+
+			  return "HI"; 
+			  }
+	
 	
 }
