@@ -48,24 +48,24 @@ public class SecurityConfig {
 		
 	}
 	
-//	@Bean
-//	public UserDetailsService detailsService() {
-//		
-//		UserDetails user = User
-//				.withDefaultPasswordEncoder()
-//				.username("chandu")
-//				.password("c@123")
-//				.roles("USER")
-//				.build();
-//		
-//		UserDetails admin = User
-//				.withDefaultPasswordEncoder()
-//				.username("admin")
-//				.password("admin@123")
-//				.roles("ADMIN")
-//				.build();
-//		
-//		return new InMemoryUserDetailsManager(user,admin);
-//	}
+	@Bean
+	public UserDetailsService detailsService() {
+		
+		UserDetails user = User
+				.withDefaultPasswordEncoder()
+				.username("chandu")
+				.password("c@123")
+				.roles("USER")
+				.build();
+		
+		UserDetails admin = User
+				.withDefaultPasswordEncoder()
+				.username("admin")
+				.password("admin@123")
+				.roles("ADMIN")
+				.build();
+		
+		return new InMemoryUserDetailsManager(user,admin);
+	}
 	
 }
